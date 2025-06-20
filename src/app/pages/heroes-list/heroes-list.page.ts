@@ -14,7 +14,6 @@ export class HeroesListPage implements OnInit {
       this.marvelService.getHeroes().subscribe({
       next: (res) => {
         this.heroes = res.data.results;
-        console.log('🦸‍♂️ Héroes desde la api:', this.heroes);
       },
       error: (err) => {
         console.error('💥 Error al traer los héroes:', err);
