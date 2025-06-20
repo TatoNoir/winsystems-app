@@ -7,6 +7,7 @@ import { IonicModule } from '@ionic/angular';
 import { HeroesListPageRoutingModule } from './heroes-list-routing.module';
 
 import { HeroesListPage } from './heroes-list.page';
+import { MarvelService } from 'src/app/services/marvel.service';
 
 @NgModule({
   imports: [
@@ -15,6 +16,7 @@ import { HeroesListPage } from './heroes-list.page';
     IonicModule,
     HeroesListPageRoutingModule
   ],
-  declarations: [HeroesListPage]
+  declarations: [HeroesListPage],
+  providers:[MarvelService]
 })
 export class HeroesListPageModule {}

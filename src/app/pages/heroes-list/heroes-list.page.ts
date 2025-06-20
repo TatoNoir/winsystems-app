@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { MarvelService } from 'src/app/services/marvel.service';
 @Component({
   selector: 'app-heroes-list',
   templateUrl: './heroes-list.page.html',
@@ -7,10 +7,19 @@ import { Component, OnInit } from '@angular/core';
   standalone: false
 })
 export class HeroesListPage implements OnInit {
-
-  constructor() { }
+  heroes: any[] = [];    //falta tipar
+  constructor(private marvelService: MarvelService) { }
 
   ngOnInit() {
+      this.marvelService.getHeroes().subscribe({
+      next: (res) => {
+        this.heroes = res.data.results;
+        console.log('🦸‍♂️ Héroes desde la api:', this.heroes);
+      },
+      error: (err) => {
+        console.error('💥 Error al traer los héroes:', err);
+      }
+    });
   }
 
 }
