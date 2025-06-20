@@ -3,5 +3,6 @@
   "LOADING": "Loading heroes...",
   "COMICS": "Number of Available Comics",
   "SERIES": "Number of Available Series",
-  "STORIES": "Number of Available Stories"
+  "STORIES": "Number of Available Stories",
+  "OTHER_INFO": "Other information:"
 }

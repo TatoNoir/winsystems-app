@@ -3,5 +3,6 @@
   "LOADING": "Cargando héroes...",
   "COMICS": "Cantidad de Cómics disponibles",
   "SERIES": "Cantidad de Series disponibles",
-  "STORIES": "Cantidad de Historias disponibles"
+  "STORIES": "Cantidad de Historias disponibles",
+  "OTHER_INFO": "Otra información:"
 }
