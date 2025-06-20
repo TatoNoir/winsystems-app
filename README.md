@@ -15,10 +15,20 @@ SCSS. OK
         Name OK
         Thumbnail OK
         La api de Marvel se encuentra en este sitio:
-        https://developer.marvel.com/docs#!/public/getCreatorCollection_get_0
-        (Es de tipo free, solo hace falta registrarse para poder consumirla)
+          https://developer.marvel.com/docs#!/public/getCreatorCollection_get_0
+          (Es de tipo free, solo hace falta registrarse para poder consumirla)
           USE LA DE SUPERHEROES LIMITADA A 20 RESULTADOS      /characters?limit=20      OK
+          
         Trabajar únicamente con los primeros 20 elementos que retorna la Api.           OK
         No aplicar paginado OK
 
     Otra que muestre el detalle de un superhéroe seleccionado desde la lista anterior.
+      Pantalla de Detalle:
+        Para la pantalla de detalle se deben mostrar los siguientes datos:
+        Nombre OK
+        Imagen en miniatura OK
+        Cantidad de Comics disponibles OK
+        Cantidad de Series disponibles OK
+        Cantidad de Stories disponibles OK
+        Los datos deben ser enviados desde la pantalla de Listado OK 
+        Esta pantalla debe permitir retornar a la anterior con un back button en la toolbar OK
