@@ -32,3 +32,10 @@ SCSS. OK
         Cantidad de Stories disponibles OK
         Los datos deben ser enviados desde la pantalla de Listado OK 
         Esta pantalla debe permitir retornar a la anterior con un back button en la toolbar OK
+
+        Otras consideraciones:
+          Se valorará la arquitectura usada
+          Se valorará la forma de implementar los stylos para la pantallas a través de scss
+          No es importante el diseño, no se espera que el desarrollador tenga conocimientos de Visual Designer e implemente un diseño espectacular.
+          La app debe funcionar tanto en Ingles como en Español de acuerdo al idioma del device.  OK
+

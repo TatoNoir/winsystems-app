@@ -1,7 +1,7 @@
 {
   "TITLE": "Superheroes List",
   "LOADING": "Loading heroes...",
-  "COMICS": "Comics",
-  "SERIES": "Series",
-  "STORIES": "Stories"
+  "COMICS": "Number of Available Comics",
+  "SERIES": "Number of Available Series",
+  "STORIES": "Number of Available Stories"
 }

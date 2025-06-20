@@ -1,0 +1,28 @@
+ion-card {
+  margin-top: 20px;
+  --background: #2b2b2b;
+}
+
+ion-card-title{
+  font-size: 1.2rem;
+  border-bottom: 0.5px #cfcfcf solid;
+  padding-bottom: 15px;
+  margin-bottom: 8px;
+}
+
+ion-card-content p {
+  font-size: 1rem;
+}
+
+.info-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 4px 0;
+  font-size: 1.1rem;
+}
+
+.hero-img {
+  max-height: 350px;
+  object-fit: cover;
+  width: 100%;
+}
