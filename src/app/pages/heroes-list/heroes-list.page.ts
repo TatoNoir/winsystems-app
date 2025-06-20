@@ -9,6 +9,7 @@ import { MarvelService } from 'src/app/services/marvel.service';
 })
 export class HeroesListPage implements OnInit {
   heroes: any[] = [];    //falta tipar
+  isLoading = true;
 
   constructor(
     private marvelService: MarvelService,
@@ -19,6 +20,7 @@ export class HeroesListPage implements OnInit {
       this.marvelService.getHeroes().subscribe({
       next: (res) => {
         this.heroes = res.data.results;
+        this.isLoading = false;
       },
       error: (err) => {
         console.error('💥 Error al traer los héroes:', err);
@@ -27,7 +29,6 @@ export class HeroesListPage implements OnInit {
   }
 
   openHero(hero: any) {
-    console.log("funcion llamada con: ", hero)
     this.router.navigate(['/heroe-detail'], {
       state: { hero }
     });

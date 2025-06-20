@@ -8,12 +8,15 @@ import { HeroeDetailPageRoutingModule } from './heroe-detail-routing.module';
 
 import { HeroeDetailPage } from './heroe-detail.page';
 
+import { TranslateModule } from '@ngx-translate/core';
+
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    HeroeDetailPageRoutingModule
+    HeroeDetailPageRoutingModule,
+    TranslateModule
   ],
   declarations: [HeroeDetailPage]
 })

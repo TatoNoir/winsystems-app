@@ -9,12 +9,15 @@ import { HeroesListPageRoutingModule } from './heroes-list-routing.module';
 import { HeroesListPage } from './heroes-list.page';
 import { MarvelService } from 'src/app/services/marvel.service';
 
+import { TranslateModule } from '@ngx-translate/core';
+
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    HeroesListPageRoutingModule
+    HeroesListPageRoutingModule,
+    TranslateModule
   ],
   declarations: [HeroesListPage],
   providers:[MarvelService]

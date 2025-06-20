@@ -15,8 +15,6 @@ export class HeroeDetailPage implements OnInit {
     const nav = this.router.getCurrentNavigation();
     this.hero = nav?.extras?.state?.['hero'];
 
-    console.log("recibido: ", this.hero)
-
     if (!this.hero) {
       this.router.navigate(['/heroes-list']);
     }
