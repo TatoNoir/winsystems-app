@@ -7,7 +7,7 @@
 <ion-content [fullscreen]="true">
 
    <ion-list *ngIf="heroes.length > 0">
-    <ion-item *ngFor="let hero of heroes">
+    <ion-item *ngFor="let hero of heroes" button (click)="openHero(hero)">
       <ion-avatar slot="start">
         <img [src]="hero.thumbnail.path + '.' + hero.thumbnail.extension" [alt]="hero.name" />
       </ion-avatar>
