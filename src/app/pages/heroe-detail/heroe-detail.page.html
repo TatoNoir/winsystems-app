@@ -9,22 +9,22 @@
 
 <ion-content [fullscreen]="true">
   <ion-card>
-    <img class="hero-img" [src]="hero.thumbnail.path + '.' + hero.thumbnail.extension" [alt]="hero.name" />
+    <img class="hero-img" [src]="hero?.thumbnail?.path + '.' + hero?.thumbnail?.extension" [alt]="hero?.name" />
     <ion-card-header>
       <ion-card-title>{{ 'OTHER_INFO' | translate }} </ion-card-title>
     </ion-card-header>
     <ion-card-content>
       <div class="info-row">
         <span class="label">{{ 'COMICS' | translate }}:</span>
-        <span class="value">{{ hero.comics.available }}</span>
+        <span class="value">{{ hero?.comics?.available }}</span>
       </div>
       <div class="info-row">
         <span class="label">{{ 'SERIES' | translate }}:</span>
-        <span class="value">{{ hero.series.available }}</span>
+        <span class="value">{{ hero?.series?.available }}</span>
       </div>
       <div class="info-row">
         <span class="label">{{ 'STORIES' | translate }}:</span>
-        <span class="value">{{ hero.stories.available }}</span>
+        <span class="value">{{ hero?.stories?.available }}</span>
       </div>
     </ion-card-content>
   </ion-card>

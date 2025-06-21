@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { Hero } from 'src/app/models/hero.model';
 import { MarvelService } from 'src/app/services/marvel.service';
 @Component({
   selector: 'app-heroes-list',
@@ -8,7 +9,7 @@ import { MarvelService } from 'src/app/services/marvel.service';
   standalone: false
 })
 export class HeroesListPage implements OnInit {
-  heroes: any[] = [];    //falta tipar
+  heroes: Hero[] = [];
   isLoading = true;
 
   constructor(

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { Hero } from 'src/app/models/hero.model';
 @Component({
   selector: 'app-heroe-detail',
   templateUrl: './heroe-detail.page.html',
@@ -7,7 +8,7 @@ import { Router } from '@angular/router';
   standalone: false
 })
 export class HeroeDetailPage implements OnInit {
-  hero: any; //TIPAR
+  hero: Hero| null = null;;
 
   constructor(private router: Router) { }
 
